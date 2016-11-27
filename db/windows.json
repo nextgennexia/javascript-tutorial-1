@@ -1,0 +1,544 @@
+{
+  "data": [
+    {
+      "id": 11,
+      "price": 2170,
+      "sizes": {
+        "windowWidth": {
+          "min": 350,
+          "max": 1800,
+          "current": 740
+        },
+        "windowHeight": {
+          "min": 500,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/1_1_small.png",
+        "big": "/public/images/window_types/1_1_big.png"
+      }
+    },
+    {
+      "id": 12,
+      "price": 3810,
+      "sizes": {
+        "windowWidth": {
+          "min": 360,
+          "max": 900,
+          "current": 740
+        },
+        "windowHeight": {
+          "min": 650,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/1_2_small.png",
+        "big": "/public/images/window_types/1_2_big.png"
+      }
+    },
+    {
+      "id": 13,
+      "price": 4160,
+      "sizes": {
+        "windowWidth": {
+          "min": 390,
+          "max": 900,
+          "current": 740
+        },
+        "windowHeight": {
+          "min": 750,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/1_3_small.png",
+        "big": "/public/images/window_types/1_3_big.png"
+      }
+    },
+    {
+      "id": 14,
+      "price": 3810,
+      "sizes": {
+        "windowWidth": {
+          "min": 350,
+          "max": 900,
+          "current": 740
+        },
+        "windowHeight": {
+          "min": 650,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/1_4_small.png",
+        "big": "/public/images/window_types/1_4_big.png"
+      }
+    },
+    {
+      "id": 15,
+      "price": 4160,
+      "sizes": {
+        "windowWidth": {
+          "min": 390,
+          "max": 900,
+          "current": 740
+        },
+        "windowHeight": {
+          "min": 750,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/1_5_small.png",
+        "big": "/public/images/window_types/1_5_big.png"
+      }
+    },
+    {
+      "id": 21,
+      "price": 4300,
+      "sizes": {
+        "windowWidth": {
+          "min": 700,
+          "max": 1800,
+          "current": 740
+        },
+        "windowHeight": {
+          "min": 500,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/2_1_small.png",
+        "big": "/public/images/window_types/2_1_big.png"
+      }
+    },
+    {
+      "id": 22,
+      "price": 4730,
+      "sizes": {
+        "windowWidth": {
+          "min": 740,
+          "max": 1800,
+          "current": 740
+        },
+        "windowHeight": {
+          "min": 750,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/2_2_small.png",
+        "big": "/public/images/window_types/2_2_big.png"
+      }
+    },
+    {
+      "id": 23,
+      "price": 4300,
+      "sizes": {
+        "windowWidth": {
+          "min": 700,
+          "max": 1800,
+          "current": 740
+        },
+        "windowHeight": {
+          "min": 500,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/2_3_small.png",
+        "big": "/public/images/window_types/2_3_big.png"
+      }
+    },
+    {
+      "id": 24,
+      "price": 4730,
+      "sizes": {
+        "windowWidth": {
+          "min": 740,
+          "max": 1800,
+          "current": 740
+        },
+        "windowHeight": {
+          "min": 750,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/2_4_small.png",
+        "big": "/public/images/window_types/2_4_big.png"
+      }
+    },
+    {
+      "id": 25,
+      "price": 6240,
+      "sizes": {
+        "windowWidth": {
+          "min": 740,
+          "max": 1800,
+          "current": 740
+        },
+        "windowHeight": {
+          "min": 750,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/2_5_small.png",
+        "big": "/public/images/window_types/2_5_big.png"
+      }
+    },
+    {
+      "id": 26,
+      "price": 6240,
+      "sizes": {
+        "windowWidth": {
+          "min": 740,
+          "max": 1800,
+          "current": 740
+        },
+        "windowHeight": {
+          "min": 750,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/2_6_small.png",
+        "big": "/public/images/window_types/2_6_big.png"
+      }
+    },
+    {
+      "id": 27,
+      "price": 6670,
+      "sizes": {
+        "windowWidth": {
+          "min": 740,
+          "max": 1800,
+          "current": 740
+        },
+        "windowHeight": {
+          "min": 750,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/2_7_small.png",
+        "big": "/public/images/window_types/2_7_big.png"
+      }
+    },
+    {
+      "id": 31,
+      "price": 6160,
+      "sizes": {
+        "windowWidth": {
+          "min": 1110,
+          "max": 2550,
+          "current": 1110
+        },
+        "windowHeight": {
+          "min": 750,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/3_1_small.png",
+        "big": "/public/images/window_types/3_1_big.png"
+      }
+    },
+    {
+      "id": 32,
+      "price": 5690,
+      "sizes": {
+        "windowWidth": {
+          "min": 1050,
+          "max": 2550,
+          "current": 1110
+        },
+        "windowHeight": {
+          "min": 750,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/3_2_small.png",
+        "big": "/public/images/window_types/3_2_big.png"
+      }
+    },
+    {
+      "id": 33,
+      "price": 6160,
+      "sizes": {
+        "windowWidth": {
+          "min": 1110,
+          "max": 2550,
+          "current": 1110
+        },
+        "windowHeight": {
+          "min": 750,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/3_3_small.png",
+        "big": "/public/images/window_types/3_3_big.png"
+      }
+    },
+    {
+      "id": 34,
+      "price": 7760,
+      "sizes": {
+        "windowWidth": {
+          "min": 1110,
+          "max": 2550,
+          "current": 1110
+        },
+        "windowHeight": {
+          "min": 750,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/3_3_small.png",
+        "big": "/public/images/window_types/3_3_big.png"
+      }
+    },
+    {
+      "id": 35,
+      "price": 7300,
+      "sizes": {
+        "windowWidth": {
+          "min": 1050,
+          "max": 2550,
+          "current": 1110
+        },
+        "windowHeight": {
+          "min": 750,
+          "max": 1700,
+          "current": 750
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/3_5_small.png",
+        "big": "/public/images/window_types/3_5_big.png"
+      }
+    },
+    {
+      "id": 41,
+      "price": 11260,
+      "sizes": {
+        "windowWidth": {
+          "min": 360,
+          "max": 1800,
+          "current": 1110
+        },
+        "windowHeight": {
+          "min": 500,
+          "max": 1700,
+          "current": 750
+        },
+        "doorWidth": {
+          "min": 600,
+          "max": 850,
+          "current": 600
+        },
+        "doorHeight": {
+          "min": 1900,
+          "max": 2300,
+          "current": 1900
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/4_1_small.png",
+        "big": "/public/images/window_types/4_1_big.png"
+      }
+    },
+    {
+      "id": 42,
+      "price": 11260,
+      "sizes": {
+        "windowWidth": {
+          "min": 360,
+          "max": 1800,
+          "current": 1110
+        },
+        "windowHeight": {
+          "min": 500,
+          "max": 1700,
+          "current": 750
+        },
+        "doorWidth": {
+          "min": 600,
+          "max": 850,
+          "current": 600
+        },
+        "doorHeight": {
+          "min": 1900,
+          "max": 2300,
+          "current": 1900
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/4_2_small.png",
+        "big": "/public/images/window_types/4_2_big.png"
+      }
+    },
+    {
+      "id": 43,
+      "price": 14030,
+      "sizes": {
+        "windowWidth": {
+          "min": 740,
+          "max": 1800,
+          "current": 1110
+        },
+        "windowHeight": {
+          "min": 750,
+          "max": 1700,
+          "current": 750
+        },
+        "doorWidth": {
+          "min": 600,
+          "max": 850,
+          "current": 600
+        },
+        "doorHeight": {
+          "min": 1900,
+          "max": 2300,
+          "current": 1900
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/4_3_small.png",
+        "big": "/public/images/window_types/4_3_big.png"
+      }
+    },
+    {
+      "id": 44,
+      "price": 14030,
+      "sizes": {
+        "windowWidth": {
+          "min": 740,
+          "max": 1800,
+          "current": 1110
+        },
+        "windowHeight": {
+          "min": 750,
+          "max": 1700,
+          "current": 750
+        },
+        "doorWidth": {
+          "min": 600,
+          "max": 850,
+          "current": 600
+        },
+        "doorHeight": {
+          "min": 1900,
+          "max": 2300,
+          "current": 1900
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/4_4_small.png",
+        "big": "/public/images/window_types/4_4_big.png"
+      }
+    },
+    {
+      "id": 51,
+      "price": 7350,
+      "sizes": {
+        "doorWidth": {
+          "min": 600,
+          "max": 850,
+          "current": 600
+        },
+        "doorHeight": {
+          "min": 1900,
+          "max": 2300,
+          "current": 1900
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/5_1_small.png",
+        "big": "/public/images/window_types/5_1_big.png"
+      }
+    },
+    {
+      "id": 52,
+      "price": 8300,
+      "sizes": {
+        "doorWidth": {
+          "min": 600,
+          "max": 850,
+          "current": 600
+        },
+        "doorHeight": {
+          "min": 1900,
+          "max": 2300,
+          "current": 1900
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/5_2_small.png",
+        "big": "/public/images/window_types/5_2_big.png"
+      }
+    },
+    {
+      "id": 53,
+      "price": 7350,
+      "sizes": {
+        "doorWidth": {
+          "min": 600,
+          "max": 850,
+          "current": 600
+        },
+        "doorHeight": {
+          "min": 1900,
+          "max": 2300,
+          "current": 1900
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/5_3_small.png",
+        "big": "/public/images/window_types/5_3_big.png"
+      }
+    },
+    {
+      "id": 54,
+      "price": 8300,
+      "sizes": {
+        "doorWidth": {
+          "min": 600,
+          "max": 850,
+          "current": 600
+        },
+        "doorHeight": {
+          "min": 1900,
+          "max": 2300,
+          "current": 1900
+        }
+      },
+      "img": {
+        "small": "/public/images/window_types/5_4_small.png",
+        "big": "/public/images/window_types/5_4_big.png"
+      }
+    }
+  ]
+}

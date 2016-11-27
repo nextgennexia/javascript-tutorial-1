@@ -17,7 +17,29 @@ module.exports = {
   devServer: {
     hot: true,
     contentBase: './',
-    port: 3334
+    port: 3333,
+    setup: (app) => {
+      const dbRoute = __dirname + '/db';
+      app
+        .get('/api/window-sills', (req, res) => {
+          res.sendFile(dbRoute + '/windowSill.json');
+        })
+        .get('/api/window-ledges', (req, res) => {
+          res.sendFile(dbRoute + '/windowLedge.json');
+        })
+        .get('/api/window-reveals', (req, res) => {
+          res.sendFile(dbRoute + '/windowReveal.json');
+        })
+        .get('/api/menu-items', (req, res) => {
+          res.sendFile(dbRoute + '/menuItems.json');
+        })
+        .get('/api/windows', (req, res) => {
+          res.sendFile(dbRoute + '/windows.json');
+        })
+        .get('/api/services', (req, res) => {
+          res.sendFile(dbRoute + '/services.json');
+        });
+    }
   },
   module: {
     loaders: [
@@ -30,6 +52,11 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules)/,
         loader: 'babel-loader?presets[]=es2015'
+      },
+      {
+        test: /\.hbs$/,
+        exclude: /(node_modules)/,
+        loader: 'handlebars-loader'
       }
     ]
   },

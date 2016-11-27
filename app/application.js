@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 import './assets/stylesheets/package.scss';
 import './assets/javascripts/package.js';
 
