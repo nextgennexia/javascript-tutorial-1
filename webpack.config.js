@@ -17,7 +17,7 @@ module.exports = {
   devServer: {
     hot: true,
     contentBase: './',
-    port: 3333
+    port: 3334
   },
   module: {
     loaders: [
