@@ -1,39 +1,27 @@
 app.modules.init = ((self) => {
 
   function _getMenuItemsData() {
-    _api({url: 'api/menu-items'}).then((response) => {
-      app.config.mainMenu = response.data;
-    });
+    _api({url: 'api/menu-items'}).then((response) => app.config.mainMenu = response);
   }
 
   function _getWindowStillData() {
-    _api({url: 'api/window-sills'}).then((response) => {
-      app.config.windowSill = response.data;
-    });
+    _api({url: 'api/window-sills'}).then((response) => app.config.windowSill = response);
   }
 
   function _getWindowLedgeData() {
-    _api({url: 'api/window-ledges'}).then((response) => {
-      app.config.windowLedge = response.data;
-    });
+    _api({url: 'api/window-ledges'}).then((response) => app.config.windowLedge = response);
   }
 
   function _getWindowRevealData() {
-    _api({url: 'api/window-reveals'}).then((response) => {
-      app.config.windowReveal = response.data;
-    });
+    _api({url: 'api/window-reveals'}).then((response) => app.config.windowReveal = response);
   }
 
   function _getWindowsData() {
-    _api({url: 'api/windows'}).then((response) => {
-      app.config.windows = response.data;
-    });
+    _api({url: 'api/windows'}).then((response) => app.config.windows = response);
   }
 
   function _getServicesData() {
-    _api({url: 'api/services'}).then((response) => {
-      app.config.services = response.data;
-    });
+    _api({url: 'api/services'}).then((response) => app.config.services = response);
   }
 
   function _api(data) {
