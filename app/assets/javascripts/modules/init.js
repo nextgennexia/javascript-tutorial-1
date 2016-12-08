@@ -50,7 +50,7 @@ app.modules.init = ((self) => {
     _handlebarsExampleOfUsage(); // Метод, показываеющий как работать с handlebars-loader
   }
 
-  self.load = () => {
+  self.resolve = () => {
     _init();
   };
 
