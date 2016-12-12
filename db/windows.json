@@ -5,11 +5,13 @@
       "price": 2170,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 350,
           "max": 1800,
           "current": 740
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 500,
           "max": 1700,
           "current": 750
@@ -25,11 +27,13 @@
       "price": 3810,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 360,
           "max": 900,
           "current": 740
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 650,
           "max": 1700,
           "current": 750
@@ -45,11 +49,13 @@
       "price": 4160,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 390,
           "max": 900,
           "current": 740
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 750,
           "max": 1700,
           "current": 750
@@ -65,11 +71,13 @@
       "price": 3810,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 350,
           "max": 900,
           "current": 740
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 650,
           "max": 1700,
           "current": 750
@@ -85,11 +93,13 @@
       "price": 4160,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 390,
           "max": 900,
           "current": 740
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 750,
           "max": 1700,
           "current": 750
@@ -105,11 +115,13 @@
       "price": 4300,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 700,
           "max": 1800,
           "current": 740
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 500,
           "max": 1700,
           "current": 750
@@ -125,11 +137,13 @@
       "price": 4730,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 740,
           "max": 1800,
           "current": 740
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 750,
           "max": 1700,
           "current": 750
@@ -145,11 +159,13 @@
       "price": 4300,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 700,
           "max": 1800,
           "current": 740
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 500,
           "max": 1700,
           "current": 750
@@ -165,11 +181,13 @@
       "price": 4730,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 740,
           "max": 1800,
           "current": 740
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 750,
           "max": 1700,
           "current": 750
@@ -185,11 +203,13 @@
       "price": 6240,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 740,
           "max": 1800,
           "current": 740
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 750,
           "max": 1700,
           "current": 750
@@ -205,11 +225,13 @@
       "price": 6240,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 740,
           "max": 1800,
           "current": 740
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 750,
           "max": 1700,
           "current": 750
@@ -225,11 +247,13 @@
       "price": 6670,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 740,
           "max": 1800,
           "current": 740
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 750,
           "max": 1700,
           "current": 750
@@ -245,11 +269,13 @@
       "price": 6160,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 1110,
           "max": 2550,
           "current": 1110
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 750,
           "max": 1700,
           "current": 750
@@ -265,11 +291,13 @@
       "price": 5690,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 1050,
           "max": 2550,
           "current": 1110
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 750,
           "max": 1700,
           "current": 750
@@ -285,11 +313,13 @@
       "price": 6160,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 1110,
           "max": 2550,
           "current": 1110
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 750,
           "max": 1700,
           "current": 750
@@ -305,19 +335,21 @@
       "price": 7760,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 1110,
           "max": 2550,
           "current": 1110
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 750,
           "max": 1700,
           "current": 750
         }
       },
       "img": {
-        "small": "/public/images/window_types/3_3_small.png",
-        "big": "/public/images/window_types/3_3_big.png"
+        "small": "/public/images/window_types/3_4_small.png",
+        "big": "/public/images/window_types/3_4_big.png"
       }
     },
     {
@@ -325,11 +357,13 @@
       "price": 7300,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 1050,
           "max": 2550,
           "current": 1110
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 750,
           "max": 1700,
           "current": 750
@@ -345,21 +379,25 @@
       "price": 11260,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 360,
           "max": 1800,
           "current": 1110
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 500,
           "max": 1700,
           "current": 750
         },
         "doorWidth": {
+          "name": "Ширина двери",
           "min": 600,
           "max": 850,
           "current": 600
         },
         "doorHeight": {
+          "name": "Высота двери",
           "min": 1900,
           "max": 2300,
           "current": 1900
@@ -375,21 +413,25 @@
       "price": 11260,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 360,
           "max": 1800,
           "current": 1110
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 500,
           "max": 1700,
           "current": 750
         },
         "doorWidth": {
+          "name": "Ширина двери",
           "min": 600,
           "max": 850,
           "current": 600
         },
         "doorHeight": {
+          "name": "Высота двери",
           "min": 1900,
           "max": 2300,
           "current": 1900
@@ -405,21 +447,25 @@
       "price": 14030,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 740,
           "max": 1800,
           "current": 1110
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 750,
           "max": 1700,
           "current": 750
         },
         "doorWidth": {
+          "name": "Ширина двери",
           "min": 600,
           "max": 850,
           "current": 600
         },
         "doorHeight": {
+          "name": "Высота двери",
           "min": 1900,
           "max": 2300,
           "current": 1900
@@ -435,21 +481,25 @@
       "price": 14030,
       "sizes": {
         "windowWidth": {
+          "name": "Ширина окна",
           "min": 740,
           "max": 1800,
           "current": 1110
         },
         "windowHeight": {
+          "name": "Высота окна",
           "min": 750,
           "max": 1700,
           "current": 750
         },
         "doorWidth": {
+          "name": "Ширина двери",
           "min": 600,
           "max": 850,
           "current": 600
         },
         "doorHeight": {
+          "name": "Высота двери",
           "min": 1900,
           "max": 2300,
           "current": 1900
@@ -465,11 +515,13 @@
       "price": 7350,
       "sizes": {
         "doorWidth": {
+          "name": "Ширина двери",
           "min": 600,
           "max": 850,
           "current": 600
         },
         "doorHeight": {
+          "name": "Высота двери",
           "min": 1900,
           "max": 2300,
           "current": 1900
@@ -485,11 +537,13 @@
       "price": 8300,
       "sizes": {
         "doorWidth": {
+          "name": "Ширина двери",
           "min": 600,
           "max": 850,
           "current": 600
         },
         "doorHeight": {
+          "name": "Высота двери",
           "min": 1900,
           "max": 2300,
           "current": 1900
@@ -505,11 +559,13 @@
       "price": 7350,
       "sizes": {
         "doorWidth": {
+          "name": "Ширина двери",
           "min": 600,
           "max": 850,
           "current": 600
         },
         "doorHeight": {
+          "name": "Высота двери",
           "min": 1900,
           "max": 2300,
           "current": 1900
@@ -525,11 +581,13 @@
       "price": 8300,
       "sizes": {
         "doorWidth": {
+          "name": "Ширина двери",
           "min": 600,
           "max": 850,
           "current": 600
         },
         "doorHeight": {
+          "name": "Высота двери",
           "min": 1900,
           "max": 2300,
           "current": 1900

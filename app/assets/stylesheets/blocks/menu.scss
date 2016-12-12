@@ -1,3 +1,31 @@
-.calculator-menu {
+.main-menu {
+  .menu-items { height: 110px; overflow: hidden; }
+  .menu-item {
+    width: 20%; height: 110px; float: left; text-align: center; cursor: pointer;
+    &:hover {
+      .title span { border-bottom: none; color: #ec0000; }
+    }
+    &.active {
+      .image { background-color: #336cb2; }
+      .title span { border-bottom: none; color: #ec0000; }
+    }
+    .image { padding: 15px 0 10px; }
+    .title {
+      height: 30px; line-height: 30px;
+      span { font-size: 12px; border-bottom: 1px dashed #333; }
+    }
+  }
 
+  .menu-subitems {
+    height: 66px; overflow: hidden; display: none;
+    &.active { display: block; }
+  }
+  .menu-subitem {
+    width: 65px; margin-right: 6px; height: 66px; float: left; text-align: center; cursor: pointer;
+    &.active { background-color: #336cb2; }
+    .image {
+      height: 66px; line-height: 66px;
+      img { max-width: 100%; vertical-align: middle; }
+    }
+  }
 }

@@ -1,0 +1,11 @@
+.features-and-services {
+  padding-left: 30px;
+  .feature-item,
+  .service-item {
+    overflow: hidden;
+    & > div { float: left; height: 50px; line-height: 50px; font-size: 20px; margin-right: 10px; }
+    input[type=checkbox] { margin-right: 10px; }
+    .price { float: right; }
+    select { height: 30px; line-height: 40px; font-size: 16px; }
+  }
+}
