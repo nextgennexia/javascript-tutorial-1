@@ -7,8 +7,12 @@
     height: 30px; line-height: 30px; margin-bottom: 10px;
     & > div { display: inline-block; margin-right: 10px; }
     .title { width: 130px; }
-    .input { width: 100px; }
+    .input { width: 100px; position: relative; }
     .hint { width: 200px; }
+    .size-block-error {
+      position: absolute; top: 100%; left: -50%; padding: 5px; border-radius: 3px; background: #e0afaf; color: #ec0000; white-space: nowrap; z-index: 2;
+      &.closed { display: none; }
+    }
     input { height: 30px; line-height: 30px; border: 1px solid #333; width: 100%; padding: 0 15px; }
   }
 }

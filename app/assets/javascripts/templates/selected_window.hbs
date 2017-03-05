@@ -1,0 +1,18 @@
+<h3>Укажите размер окна</h3>
+<div class="window-info">
+    <div class="image">
+        <img src="{{data.img.big}}">
+    </div>
+    <div class="sizes">
+        {{#each data.sizes}}
+        <div class="size-block">
+            <div class="title">{{this.name}}</div>
+            <div class="input">
+                <input class="js-size-block-input" data-name="{{@key}}" type="text" name="{{this.name}}" value="{{this.current}}">
+                <div class="size-block-error closed js-size-block-error"></div>
+            </div>
+            <div class="hint">От {{this.min}} до {{this.max}}, мм</div>
+        </div>
+        {{/each}}
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<h3>{{data.name}}</h3>
+{{#each data.data}}
+<div class="service-item">
+    <div class="title">
+        <label>
+            <input type="checkbox" data-slug="{{this.slug}}" class="js-toggle-services">
+            {{this.name}}
+        </label>
+    </div>
+    <div class="price">{{this.price}} руб.</div>
+</div>
+{{/each}}
