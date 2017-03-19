@@ -24,14 +24,15 @@ app.modules.selectedWindow = (function(self) {
 
   function _listener() {
     $(document)
-      .on('selectWindow:selectedWindow', function(event, id) {
-        _setCurrentWindow(id);
+      .on('selectWindow:calculator', function(event, windowId) {
+        _setCurrentWindow(windowId);
         _renderTemplate();
       })
-      .on('change', '.js-size-block-input', function() {
+      .on('change', '.js-size-window', function() {
         let
           $this = $(this),
           value = $this.val(),
+          sizes = _currentWindow.sizes[$this.data('name')],
           $blockError = $this.siblings('.js-size-block-error');
 
         if ($.isNumeric(value)) {
@@ -41,13 +42,17 @@ app.modules.selectedWindow = (function(self) {
           return;
         }
 
-        if (value < _currentWindow.sizes[$this.data('name')].min || value > _currentWindow.sizes[$this.data('name')].max) {
+        if (value < sizes.min || value > sizes.max) {
           _showError('Введенный размер не соответствует допустимым', $blockError);
         } else {
           $blockError.addClass('closed');
-          _currentWindow.sizes[$this.data('name')].current = value;
+          sizes.current = value;
           $(document).trigger('changeSpecs:calculator', [_currentWindow]);
         }
+      })
+      .on('changeOrder:calculator', function(event, window) {
+        _currentWindow = window;
+        _renderTemplate();
       });
   }
 

@@ -17,30 +17,42 @@ app.modules.menu = (function(self) {
     });
   }
 
-  function _setActiveMenu($items, currentId) {
-    $items.map(function(key, value) {
-      let $currentItem = $(value);
-
-      $currentItem.toggleClass('active', $currentItem.data('id') === currentId);
-    });
+  function _setActiveMenu($element) {
+    $element.addClass('active').siblings().removeClass('active');
   }
 
   function _listener() {
     $(document)
       .on('click', '.js-menu-item', function() {
-        let id = $(this).data('id');
+        let
+          $this = $(this),
+          $submenu = $('.js-menu-subitems[data-id="' + $this.data('id') + '"]'),
+          windowId = $submenu.find('.js-menu-subitem.active').data('id');
 
-        _setActiveMenu($('.js-menu-item, .js-menu-subitems'), id);
+        _setActiveMenu($this);
+        _setActiveMenu($submenu);
+
         $(document)
-          .trigger('changeWindowType:calculator', [id])
-          //при смене типа окна рендерим активное окно, которое могло быть выбрано пользователем ранее
-          .trigger('selectWindow:selectedWindow', [$('.js-menu-subitems.active .js-menu-subitem.active').data('id')]);
+          .trigger('changeWindowType:calculator', [$this.data('id')])
+          .trigger('selectWindow:calculator', [windowId]);
       })
       .on('click', '.js-menu-subitem', function() {
-        let id = $(this).data('id');
+        let $this = $(this);
 
-        _setActiveMenu($('.js-menu-subitems.active .js-menu-subitem'), id);
-        $(document).trigger('selectWindow:selectedWindow', [id]);
+        _setActiveMenu($this);
+
+        $(document)
+          .trigger('changeWindowType:calculator', [$this.closest('.js-menu-subitems').data('id')])
+          .trigger('selectWindow:calculator', [$this.data('id')]);
+
+      })
+      .on('changeOrder:calculator', function(event, window) {
+        let typeWindow = app.config.mainMenu.data.find(function(topMenu) {
+          return topMenu.items.includes(window.id);
+        });
+
+        _setActiveMenu($('.js-menu-item[data-id="' + typeWindow.id + '"]'));
+        _setActiveMenu($('.js-menu-subitems[data-id="' + typeWindow.id + '"]'));
       });
   }
 

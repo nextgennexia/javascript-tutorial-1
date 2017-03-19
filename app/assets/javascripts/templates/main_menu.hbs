@@ -15,7 +15,7 @@
 {{#each data}}
 <div class="menu-subitems{{#unless @index}} active{{/unless}} js-menu-subitems" data-id="{{this.id}}">
     {{#each this.serializedItems}}
-    <div class="menu-subitem{{#unless @index}} active{{/unless}} js-menu-subitem" data-id="{{this.id}}">
+    <div class="menu-subitem{{#unless @index}} active{{/unless}} js-menu-subitem" data-id="{{this.id}}" data-type-id="{{../this.id}}">
         <div class="image">
             <img src="{{this.img.small}}" />
         </div>

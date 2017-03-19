@@ -29,3 +29,30 @@
     }
   }
 }
+
+.order-card-menu {
+  .menu-item {
+    position: relative; width: 80px; text-align: center; cursor: pointer;
+    &:hover {
+      .title span { border-bottom: none; color: #ec0000; }
+    }
+    &.active {
+      .image { background-color: #336cb2; }
+      .title span { border-bottom: none; color: #ec0000; }
+    }
+    .image { padding: 15px 0 10px; }
+    .title {
+      height: 30px; line-height: 30px;
+      span { font-size: 12px; border-bottom: 1px dashed #333; }
+    }
+    .close-icon { content: 'X'; position: absolute; top: -5px; right: -5px; }
+  }
+  .add-window {
+    width: 80px; height: 80px; line-height: 80px; border: 3px dashed #A7ACB2; border-radius: 5px; text-align: center; cursor: pointer;
+    &:hover {
+      border-color: #333;
+      &:before { color: #333; }
+    }
+    &:before { content: '+'; display: inline-block; font-size: 28px; line-height: 28px; font-weight: bold; color: #A7ACB2; }
+  }
+}

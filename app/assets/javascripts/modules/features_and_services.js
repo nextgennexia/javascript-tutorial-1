@@ -51,7 +51,7 @@ app.modules.featuresAndServices = (function(self) {
       return item.slug === slug;
     });
 
-    $(document).trigger('toggleFeature:calculator', [$.extend(true, {}, featureObject), isChecked]); // экстенд, потому что нужна копия, а не ссылка
+    $(document).trigger('toggleFeature:calculator', [$.extend(true, {}, featureObject), isChecked]);
   }
 
   function _setPrice($this) {
@@ -68,6 +68,16 @@ app.modules.featuresAndServices = (function(self) {
     $(document).trigger('updateFeaturePrice:calculator', [slug, price]);
   }
 
+  function _findWindowType(windowId) {
+    let windowType = app.config.mainMenu.data.find(function(menu) {
+      return menu.serializedItems.some(function(item) {
+        return item.id === windowId;
+      })
+    });
+
+    return windowType.id;
+  }
+
   function _renderTemplates() {
     const
       templateFeatures = require('../templates/features.hbs'),
@@ -79,13 +89,13 @@ app.modules.featuresAndServices = (function(self) {
 
   function _listener() {
     $(document)
-      .on('changeWindowType:calculator', function(event, id) {
-        _filterFeatures(id);
-        _filterServices(id);
+      .on('changeWindowType:calculator', function(event, windowTypeId) {
+        _filterFeatures(windowTypeId);
+        _filterServices(windowTypeId);
         _normalizeData();
         _renderTemplates();
       })
-      .on('change', '.js-toggle-features, .js-toggle-services', function() {
+      .on('change', '.js-feature, .js-service', function() {
         _toggleFeature($(this));
       })
       .on('change', '.js-feature-select', function() {
@@ -93,6 +103,17 @@ app.modules.featuresAndServices = (function(self) {
 
         $this.closest('.js-feature-item').find('.js-feature-price').html(parseInt($this.val()));
         _setPrice($this);
+      })
+      .on('schangeOrder:calculator', function(event, window) {
+        let windowTypeId = _findWindowType(window.id);
+
+        _filterFeatures(windowTypeId);
+        _filterServices(windowTypeId);
+        _normalizeData();
+        _renderTemplates();
+        window.options.forEach(function(option) {
+          $('.js-feature[data-slug = "' + option.slug + '"], .js-service[data-slug = "' + option.slug + '"]').attr({checked: 'checked'});
+        });
       });
   }
 

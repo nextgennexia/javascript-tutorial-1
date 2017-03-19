@@ -1,0 +1,14 @@
+<h3>Ваш заказ</h3>
+<div class="menu-items">
+    {{#each data}}
+    <div class="menu-item{{#if this.currentSelection.active}} active{{/if}} js-order-card-menu-item" data-id="{{@index}}">
+        <div class="image">
+            <img src="{{this.currentSelection.img.small}}" />
+        </div>
+        {{#if @index}}
+        <div class="close-icon js-remove-order">X</div>
+        {{/if}}
+    </div>
+    {{/each}}
+</div>
+<div class="add-window js-add-window"></div>
