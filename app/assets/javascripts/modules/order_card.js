@@ -17,12 +17,15 @@ app.modules.orderCard = (function(self) {
         $(document).trigger('addWindow:calculator');
       })
       .on('click', '.js-order-card-menu-item', function() {
+        var menuId = $(this).data('id');
+
         _renderTemplateOrderCard();
-        _setActiveMenu($(this).data('id'));
-        $(document).trigger('changeOrderWindow:calculator', [$(this).data('id')])
+        _setActiveMenu(menuId);
+
+        $(document).trigger('changeOrderWindow:calculator', [menuId]);
       })
       .on('click', '.js-remove-order', function() {
-        $(document).trigger('removeOrderWindow:calculator', [$(this).closest('.js-order-card-menu-item').data('id')])
+        $(document).trigger('removeOrderWindow:calculator', [$(this).closest('.js-order-card-menu-item').data('id')]);
         return false;
       })
       .on('updateOrder:orderCard', function(event, listOrders, currentId) {

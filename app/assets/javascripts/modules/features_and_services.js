@@ -78,6 +78,13 @@ app.modules.featuresAndServices = (function(self) {
     return windowType.id;
   }
 
+  function _setOptions(options) {
+    options.forEach(function(item) {
+      $('.js-feature[data-slug="' + item.slug + '"], .js-service[data-slug="' + item.slug + '"]').attr({checked: true});
+      $('.js-feature-select[data-slug="' + item.slug + '"]').attr({selected: true});
+    });
+  }
+
   function _renderTemplates() {
     const
       templateFeatures = require('../templates/features.hbs'),
@@ -104,16 +111,14 @@ app.modules.featuresAndServices = (function(self) {
         $this.closest('.js-feature-item').find('.js-feature-price').html(parseInt($this.val()));
         _setPrice($this);
       })
-      .on('schangeOrder:calculator', function(event, window) {
+      .on('changeOrder:calculator', function(event, window) {
         let windowTypeId = _findWindowType(window.id);
 
         _filterFeatures(windowTypeId);
         _filterServices(windowTypeId);
         _normalizeData();
         _renderTemplates();
-        window.options.forEach(function(option) {
-          $('.js-feature[data-slug = "' + option.slug + '"], .js-service[data-slug = "' + option.slug + '"]').attr({checked: 'checked'});
-        });
+        _setOptions(window.options)
       });
   }
 

@@ -53,6 +53,8 @@ app.modules.menu = (function(self) {
 
         _setActiveMenu($('.js-menu-item[data-id="' + typeWindow.id + '"]'));
         _setActiveMenu($('.js-menu-subitems[data-id="' + typeWindow.id + '"]'));
+
+        $(document).trigger('changeWindowType:calculator', [typeWindow.id]);
       });
   }
 

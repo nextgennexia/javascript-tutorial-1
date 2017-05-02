@@ -8,11 +8,6 @@ app.modules.calculator = (function(self) {
   function _init() {
     let object;
 
-    /*app.config.windows.data.forEach(function(window) {
-      if (window.id === app.config.mainMenu.data[0].items[0]) {
-        object = $.extend(true, {}, window);
-      }
-    });*/
     object = app.config.windows.data.find(function(window) {
       return window.id === app.config.mainMenu.data[0].items[0];
     });
@@ -107,7 +102,7 @@ app.modules.calculator = (function(self) {
         _currentOrderId = id;
         _result = _listOrders[_currentOrderId];
         _renderTemplate();
-        $(document).trigger('changeOrder:calculator', [_result.currentSelection])
+        $(document).trigger('changeOrder:calculator', [_result.currentSelection]);
       })
       .on('removeOrderWindow:calculator', function(event, id) {
         _listOrders.splice(id, 1);
